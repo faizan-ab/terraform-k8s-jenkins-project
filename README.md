@@ -187,13 +187,14 @@ kubectl get svc
 ---
 
 # 📸 Project Screenshots
+
 ## 📊 Jenkins Pipeline Execution
 
 ![Jenkins Pipeline](screenshots/jenkins-pipeline-success.png)
 
 ---
 
-# ☸ Kubernetes Cluster
+## ☸ Kubernetes Cluster
 
 ### Nodes
 
@@ -213,7 +214,7 @@ kubectl get svc
 
 ---
 
-# 🌐 Application Output
+## 🌐 Application Output
 
 The Nginx application is exposed via AWS LoadBalancer.
 
