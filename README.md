@@ -1,11 +1,11 @@
-## 🚀 Terraform + Jenkins + Kubernetes (EKS) CI/CD Pipeline
+# 🚀 Terraform + Jenkins + Kubernetes (EKS) CI/CD Pipeline
 
 ![Project Demo](screenshots/devops-pipeline-demo.gif)
 
 
 ---
 
-# 📌 Project Overview
+## 📌 Project Overview
 
 This project demonstrates a Kubernetes application using Jenkins for CI-CD pipeline, EKS for automated cluster configuration, and terraform for provisioning of the infrastructure.
 
@@ -169,7 +169,7 @@ terraform plan
 terraform apply
 ```
 
-###4️⃣ EKS cluster is created
+### 4️⃣ EKS cluster is created
 
 ### 5️⃣ Kubernetes Deployment runs
 
@@ -180,9 +180,9 @@ kubectl get nodes
 kubectl get pods
 kubectl get svc
 ```
-6️⃣ Nginx application is deployed
+### 6️⃣ Nginx application is deployed
 
-7️⃣ AWS LoadBalancer exposes the application
+### 7️⃣ AWS LoadBalancer exposes the application
 
 ---
 
