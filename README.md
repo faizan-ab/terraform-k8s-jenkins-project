@@ -186,8 +186,8 @@ kubectl get svc
 
 ---
 
-### 📸 Project Screenshots
-# 📊 Jenkins Pipeline Execution
+# 📸 Project Screenshots
+## 📊 Jenkins Pipeline Execution
 
 ![Jenkins Pipeline](screenshots/jenkins-pipeline-success.png)
 
