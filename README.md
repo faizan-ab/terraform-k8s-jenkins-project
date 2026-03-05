@@ -1,4 +1,24 @@
 ## 🚀 Terraform + Jenkins + Kubernetes (EKS) CI/CD Pipeline
+---
+
+![Project Demo](screenshots/devops-pipeline-demo.gif)
+
+
+---
+
+# 📌 Project Overview
+
+This project demonstrates a Kubernetes application using Jenkins for CI-CD pipeline, EKS for automated cluster configuration, and terraform for provisioning of the infrastructure.
+
+## ⭐ Project Highlights
+
+- Automated CI/CD pipeline using **Jenkins**
+- Infrastructure provisioning using **Terraform**
+- Kubernetes deployment on **AWS EKS**
+- Application exposed using **AWS LoadBalancer**
+- Fully automated DevOps workflow from **GitHub → Production**
+
+---
 
 ![Terraform](https://img.shields.io/badge/Terraform-IaC-blueviolet)
 ![AWS](https://img.shields.io/badge/AWS-EKS-orange)
@@ -8,20 +28,24 @@
 
 ---
 
-# 📌 Project Overview
+## 📑 Table of Contents
 
-This project demonstrates a Kubernetes application using Jenkins for CI-CD pipeline, EKS for automated cluster configuration, and terraform for provisioning of the infrastructure.
-
-The pipeline automatically:
-
-1. Provisions AWS infrastructure using Terraform
-2. Creates an EKS cluster
-3. Deploys an Nginx application to Kubernetes
-4. Exposes the application using an AWS LoadBalancer
+- [Project Overview](#project-overview)
+- [Architecture](#architecture)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [CI/CD Pipeline Flow](#cicd-pipeline-flow)
+- [Jenkins Pipeline](#jenkins-pipeline)
+- [Kubernetes Deployment](#kubernetes-deployment)
+- [Application Output](#application-output)
+- [Key Learnings](#key-learnings)
+- [Clean Up](#clean-up)
 
 ---
 
 # 🏗 Architecture
+
+![Architecture](screenshots/architecture.png)
 
 ```
 Developer
@@ -107,7 +131,7 @@ terraform-k8s-jenkins-project
 
 # 🔄 CI/CD Pipeline Flow
 
-### 1️⃣ Code Push
+### 1️⃣ Developer pushes code to GitHub
 
 Developer pushes code to GitHub.
 
@@ -117,7 +141,7 @@ git push origin main
 
 ---
 
-### 2️⃣ Jenkins Pipeline Trigger
+### 2️⃣ Jenkins pipeline is triggered
 
 Jenkins automatically triggers the pipeline.
 
@@ -131,7 +155,7 @@ Deploy to Kubernetes
 
 ---
 
-### 3️⃣ Terraform Infrastructure Provisioning
+### 3️⃣ Terraform provisions AWS infrastructure
 
 Terraform provisions AWS resources:
 
@@ -153,8 +177,8 @@ terraform apply
 ```
 
 ---
-
-### 4️⃣ Kubernetes Deployment
+###4️⃣ EKS cluster is created
+### 5️⃣ Kubernetes Deployment runs
 
 Application deployed to Kubernetes.
 
@@ -163,9 +187,12 @@ kubectl get nodes
 kubectl get pods
 kubectl get svc
 ```
+6️⃣ Nginx application is deployed
+7️⃣ AWS LoadBalancer exposes the application
 
 ---
 
+### 📸 Project Screenshots
 # 📊 Jenkins Pipeline Execution
 
 ![Jenkins Pipeline](screenshots/jenkins-pipeline-success.png)
@@ -200,13 +227,23 @@ The Nginx application is exposed via AWS LoadBalancer.
 
 ---
 
+## 🧩 Skills Demonstrated
+
+- Infrastructure as Code (Terraform)
+- CI/CD Pipeline Automation (Jenkins)
+- Kubernetes Deployment & Management
+- AWS Cloud Infrastructure
+- DevOps Workflow Automation
+
+---
+
 # 🧠 Key Learnings
 
 This project demonstrates:
 
 * Infrastructure provisioning with **Terraform**
 * Automated deployment with **Jenkins CI/CD**
-* Running applications on **AWS EKS**
+* Running applications of Kubernetes deployment on **AWS EKS**
 * Managing workloads with **Kubernetes**
 * Exposing services using **AWS LoadBalancer**
 * Troubleshooting **subnet tagging issues for ELB**
